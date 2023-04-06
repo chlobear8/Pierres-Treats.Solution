@@ -2,22 +2,28 @@
   Layout = "_Layout";
 }
 
-<h1>Authentication with Identity</h1>
+@using PierresTreats.ViewModels
+
+@model LoginViewModel
+
+<h1>Log in with your account</h1>
 <hr />
 
-@if (User.Identity.IsAuthenticated)
+@if(!ViewData.ModelState.IsValid)
 {
-  <p>Hello @User.Identity.Name!</p>
-  @using (Html.BeginForm("LogOff", "Account"))
-  {
-    <input type="submit" class="btn btn-primary" value="Log out" />
-  }
-}
-else
-{
-  <p>@Html.ActionLink("Register", "Register")</p>
-  <p>@Html.ActionLink("Log in", "Login")</p>
+  @Html.ValidationSummary("Please fix the following error(s) and then resubmit the form:")
 }
 
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(m => m.Email)
+  @Html.TextBoxFor(m => m.Email)
 
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
+  @Html.LabelFor(m => m.Password)
+  @Html.TextBoxFor(m => m.Password)
+
+  <input type="submit" value="Log In" />
+}
+
+<p>@Html.ActionLink("Register for an account", "Register")</p>
+<p>@Html.ActionLink("Back to accounts page", "Index")</p>
