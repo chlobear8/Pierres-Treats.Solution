@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authorization;
 
 namespace PierresTreats.Controllers
 {
@@ -22,6 +23,7 @@ namespace PierresTreats.Controllers
       return View(model);
     }
 
+    [Authorize]
     public ActionResult Create()
     {
       ViewBag.FlavorId = new SelectList(_db.Flavors, "FlavorId", "Name");
