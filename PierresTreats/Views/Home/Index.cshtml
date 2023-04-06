@@ -8,6 +8,32 @@
 
 <hr>
 
+<h2>Treats</h2>
+@if (Model["treats"].Length == 0)
+{
+  <p>No treats have been added yet!</p>
+} 
+<ul>
+  @foreach (Treat trt in Model["treats"])
+  {
+    <li>@Html.ActionLink(@trt.Name, "Details", "Treats", new { id = @trt.TreatId})</li>
+  }
+</ul>
+
+<h2>Flavors</h2>
+@if (Model["flavors"].Length == 0)
+{
+  <p>No flavors have been added yet!</p>
+} 
+<ul>
+  @foreach (Flavor flavor in Model["flavors"])
+  {
+    <li>@Html.ActionLink(@flavor.Name, "Details", "Flavor", new { id = @flavor.FlavorId})</li>
+  }
+</ul>
+
+<hr>
+
 <p>@Html.ActionLink("See all the treats", "Index", "Treats")</p>
 <p>@Html.ActionLink("See all flavors", "Index", "Flavors")</p>
 <p>@Html.ActionLink("Create or manage an account", "Index", "Account")</p>

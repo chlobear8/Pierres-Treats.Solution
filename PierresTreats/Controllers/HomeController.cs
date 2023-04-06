@@ -20,10 +20,15 @@ public class HomeController : Controller
         _db = db;
     }
 
-    public IActionResult Index()
+    [HttpGet("/")]
+    public ActionResult Index()
     {
-        return View();
+      Treat[] trt = _db.Treats.ToArray();
+      Flavor[] flavors = _db.Flavors.ToArray();
+      Dictionary<string,object[]> model = new Dictionary<string, object[]>();
+      model.Add("treats", trt);
+      model.Add("flavors", flavors);
+      return View(model);
     }
+  }
 
-    
-}
