@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace PierresTreats.Controllers
 {
-  public class TreatsController : Controller
+  public class TreatController : Controller
   {
     private readonly TreatsContext _db;
 
