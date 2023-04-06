@@ -1,6 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using Factory.Models;
+using PierresTreats.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Builder;
 
