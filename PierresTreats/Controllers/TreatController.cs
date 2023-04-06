@@ -11,7 +11,7 @@ namespace PierresTreats.Controllers
   {
     private readonly TreatsContext _db;
 
-    public TreatsController(TreatsContext db)
+    public TreatController(TreatsContext db)
     {
       _db = db;
     }
