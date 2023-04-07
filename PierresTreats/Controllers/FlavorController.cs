@@ -18,8 +18,8 @@ namespace PierresTreats.Controllers
 
     public ActionResult Index()
     {
-      List<Flavor> model = _db.Flavors.ToList();
-      return View(model);
+      // List<Flavor> model = _db.Flavors.ToList();
+      return View();
     }
 
     public ActionResult Create()
