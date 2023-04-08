@@ -15,4 +15,39 @@ html {
 
 body {
   margin-bottom: 60px;
+  color: black;
+  background-color: #d78fb4;
+}
+
+#gh-logo{
+  width: 2.2em;
+  padding: .2em;
+  left: 800px;
+}
+
+.to-right {
+  margin-left: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: rgb(132, 32, 66);
+  margin-bottom: 1.5em;
+  min-width: 840px;
+}
+
+div#footer {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  color:#751249;
+  background:#a7517d;
+  padding:8px;
+  text-align: center;
+}
+
+#gh-logo {
+  background-color: #751249;
 }

@@ -5,29 +5,30 @@ a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  background-color: #53083b;
 }
 
 a {
-  color: #0077cc;
+  color: #97227a;
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  color: #590d42;
+  background-color: #b21c79;
+  border-color: #460c33;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  color: #5d1d48;
+  background-color: #78165b;
+  border-color: #ac1858;
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #461539;
 }
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #53083b;
 }
 
 .box-shadow {
