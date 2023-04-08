@@ -21,7 +21,7 @@ namespace PierresTreats.Controllers
       _db = db;
     }
 
-    [AllowAnnonymous]
+    [AllowAnonymous]
     public ActionResult Index()
     {
       List<Treat> model = _db.Treats.ToList();
