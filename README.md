@@ -15,13 +15,16 @@ This project is built to allow Pierre to add Flavors and Treats to a database. I
 ## Setup/Installation Requirements
 - Clone this repository to your desktop.
 - Download both of these packages from your terminal:
-```<br> $ dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0
-$ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0 <br>```<br>
+```bash
+$ dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0
+$ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0 
+```
 - CD into PierresTreats and create an appsettings.json file.
 - In said file include:
-```<br>
+```javascript
 { "ConnectionStrings": {
-        "DefaultConnection": "Server=localhost;Port=3306;database=[DATABASE-NAME];uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE]"} }<br> ``` <br>
+        "DefaultConnection": "Server=localhost;Port=3306;database=[DATABASE-NAME];uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE]"} }
+         ```
 - To import from MySql:
 - From Navigation>Administration window, select 'Data Import/Restore'.
 - In 'Import Options' select 'Import from Self-Contained File'. (chloe_oneil_many_to_many_authorize.sql)
