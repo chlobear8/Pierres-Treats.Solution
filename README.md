@@ -24,7 +24,7 @@ $ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0
 ```javascript
 { "ConnectionStrings": {
         "DefaultConnection": "Server=localhost;Port=3306;database=[DATABASE-NAME];uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE]"} }
-         ```
+```
 - To import from MySql:
 - From Navigation>Administration window, select 'Data Import/Restore'.
 - In 'Import Options' select 'Import from Self-Contained File'. (chloe_oneil_many_to_many_authorize.sql)
