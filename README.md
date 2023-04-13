@@ -15,15 +15,13 @@ This project is built to allow Pierre to add Flavors and Treats to a database. I
 ## Setup/Installation Requirements
 - Clone this repository to your desktop.
 - Download both of these packages from your terminal:
-$ dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0
-$ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0
+```<br> $ dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0
+$ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0 <br>```<br>
 - CD into PierresTreats and create an appsettings.json file.
 - In said file include:
-{
-    "ConnectionStrings": {
-        "DefaultConnection": "Server=localhost;Port=3306;database=[DATABASE-NAME];uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE];"
-    }
-}
+```<br>
+{ "ConnectionStrings": {
+        "DefaultConnection": "Server=localhost;Port=3306;database=[DATABASE-NAME];uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE]"} }<br> ``` <br>
 - To import from MySql:
 - From Navigation>Administration window, select 'Data Import/Restore'.
 - In 'Import Options' select 'Import from Self-Contained File'. (chloe_oneil_many_to_many_authorize.sql)
@@ -34,7 +32,7 @@ $ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0
 - flavors table should include columns ["FlavorId", "UserId" and "Name"].
 - treats table should include columns ["TreatId", "UserId" and "Name"].
 - TreatFlavor table should include columns ["TreatFlavorId", "TreatId" and "FlavorId"]
-- Start a development server with $ dotnet run.
+- Start a development server with `$ dotnet run`.
 
 
 ## Known bugs
